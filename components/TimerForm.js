@@ -2,7 +2,7 @@ import React from 'react'
 import { StyleSheet, View, Text, TextInput } from 'react-native'
 import TimerButton from './TimerButton'
 
-export default class TimerForm extends React.Component() {
+export default class TimerForm extends React.Component {
   constructor(props) {
     super(props)
 

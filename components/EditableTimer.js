@@ -2,7 +2,7 @@ import React from 'react'
 import TimerForm from './TimerForm'
 import Timer from './Timer'
 
-export default class EditableTimer extends React.Component() {
+export default class EditableTimer extends React.Component {
   state = {
     editFormOpen: false,
   }

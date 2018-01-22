@@ -25,7 +25,7 @@ export default class App extends React.Component {
   }
 
   render() {
-    const { timers} = this.state
+    const { timers } = this.state
 
     return (
       <View style={styles.appContainer}>
