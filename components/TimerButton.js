@@ -1,5 +1,6 @@
 import React from 'react'
-import { StyleSheet, Text, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity, ColorPropType } from 'react-native'
+import { PropTypes } from 'prop-types'
 
 export default function TimerButton({ color, title, small, onPress }) {
   return (
@@ -18,6 +19,17 @@ export default function TimerButton({ color, title, small, onPress }) {
       </Text>
     </TouchableOpacity>
   )
+}
+
+TimerButton.propTypes = {
+  color: ColorPropType.isRequired,
+  title: PropTypes.string.isRequired,
+  small: PropTypes.bool,
+  onPress: PropTypes.func.isRequired,
+}
+
+TimerButton.defaultProps = {
+  small: false,
 }
 
 const styles = StyleSheet.create({
